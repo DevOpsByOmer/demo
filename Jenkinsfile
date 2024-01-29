@@ -42,7 +42,7 @@ pipeline {
                 script {
                     // Use the current branch as part of the clone URL
                     def scmBranch = env.BRANCH_NAME ?: 'master'
-                    sh "git clone -b ${scmBranch} https://github.com/DevOpsByOmer/GitHub-.git"
+                    sh "git clone -b ${scmBranch} https://github.com/DevOpsByOmer/demo.git"
                 }
             }
         }
